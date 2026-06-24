@@ -147,9 +147,9 @@
   # typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%238F╰─'
   typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%15F╭─'
   typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX='%15F├─'
-  # typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%15F╰─╼'
+  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%15F╰─╼'
   # typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%15F╰─🢖'
-  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%15F╰─🢒'
+  # typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%15F╰─🢒'
   
 
   # Connect right prompt lines with these symbols.
@@ -195,7 +195,7 @@
   # The right end of right prompt.
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_LAST_SEGMENT_END_SYMBOL='\uE0B4'
   # Left prompt terminator for lines without any segments.
-  typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=
+  typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=''
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
@@ -850,7 +850,7 @@
   typeset -g POWERLEVEL9K_VI_MODE_FOREGROUND=0
   # Text and color for normal (a.k.a. command) vi mode.
   typeset -g POWERLEVEL9K_VI_COMMAND_MODE_STRING=NORMAL
-  typeset -g POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND=2
+  typeset -g POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND=4
   # Text and color for visual vi mode.
   typeset -g POWERLEVEL9K_VI_VISUAL_MODE_STRING=VISUAL
   # typeset -g POWERLEVEL9K_VI_MODE_VISUAL_BACKGROUND=4
