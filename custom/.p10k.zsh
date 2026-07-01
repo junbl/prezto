@@ -150,7 +150,7 @@
   typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%15F╰─╼'
   # typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%15F╰─🢖'
   # typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%15F╰─🢒'
-  
+
 
   # Connect right prompt lines with these symbols.
   typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX=
@@ -233,8 +233,8 @@
 
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
-  # typeset -g POWERLEVEL9K_DIR_BACKGROUND=6
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND=2
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND=6
+  # typeset -g POWERLEVEL9K_DIR_BACKGROUND=2
   # Default current directory foreground color.
   typeset -g POWERLEVEL9K_DIR_FOREGROUND=8
   # If directory is too long, shorten some of its segments to the shortest possible unique
@@ -376,7 +376,8 @@
   # typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=2
   typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=8
   typeset -g POWERLEVEL9K_VCS_CLEAN_FOREGROUND=7
-  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=4
+  # typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=4
+  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=5
   typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=3
   typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=1
   typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=8
