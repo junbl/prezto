@@ -88,7 +88,7 @@ colors() {
 
 sledup() {
   local num="${1:-01}"
-  ssh -vvv -i ~/.ssh/id_ed25519 spire@glas-sled"${num}"-pc01.eng.spire.com
+  ssh -i ~/.ssh/id_ed25519 spire@glas-sled"${num}"-pc01.eng.spire.com
 }
 
 
