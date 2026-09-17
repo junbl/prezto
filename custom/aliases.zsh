@@ -30,11 +30,10 @@ wpanew() {
     fi
 }
 # zsh config
-alias srcz='source $ZDOTDIR/.zshrc'
+alias srcz='source ~/.zshrc'
 # ros setup file
 # alias srcr='source ~/catkin_ws/devel/setup.zsh'
 # shorter nvim
-alias nvim=nvim-set-bg
 alias nv='nvim'
 alias vi='nvim'
 # ls looking cute
