@@ -78,13 +78,28 @@ colors() {
 # safer rm and mv
 #   b: if moving would overwrite, create new with ~ appended
 #
-# alias mv="mv -b"
-# alias REALLY_RM_FOR_REAL=/bin/rm
-# rm() {
-#     mv "$@" $USER_TRASH_DIR
-# }
-#
-#
+alias mv="mv -b"
+alias REALLY_RM_FOR_REAL=/bin/rm
+
+move_to_trash() {
+    mv "$@" $USER_TRASH_DIR
+}
+alias rm=move_to_trash
+
+alias ln="ln -i"
+
+awkcol() {
+    arg="{ printf \$$1; }"
+    awk $arg
+}
+
+trash_too_big() {
+  trash_size=$(/bin/du $USER_TRASH_DIR -s | awkcol 1)
+  # echo $trash_size
+  if [ $trash_size -gt 50000 ]; then
+    echo "trash too big: `/bin/du $USER_TRASH_DIR -sh`"
+  fi
+}
 
 sledup() {
   local num="${1:-01}"
